@@ -1,3 +1,5 @@
+<!-- Images must be stored in the folder with the name assets/Public/media -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +15,7 @@
   <body>
 
   <!----------------------         Nav Bar       --------------------------->
-  
+  <!-- Dangling Nav Bar section -->
     
 
 
@@ -27,13 +29,16 @@
 
 
 
-
+<!-- Use semantic tags -->
     <div class="main-container">
+      <!-- semantic tag -->
       <div class="name">
+        <!-- There should be only one h1 tag in the whole DOM tree -->
         <h1>Hi, My name is<span class="colored-name"> Ameer Hamza</span></h1>
         <h1>I am a Web developer.</h1>
         <button class="button">Know More</button>
       </div>
+      <!-- semantic tag -->
       <div class="about-section">
         <h1 class="about">About Me</h1>
 
@@ -53,12 +58,15 @@
       </div>
 
       <!-------------------------      Projects Section               ------------------------------------>
+      <!-- semantic tag -->
       <div class="project-section">
         <h1 class="projects">Projects</h1>
 
         <div class="projects-container">
           <div class="project-details">
-            <h1 id="project-title">Project 1</h1>
+            <!-- h1 tag -->
+            <h1 id="project-title">Project 1</h1> 
+            <!-- id must be unique in the whole DOM tree -->
             <p id="project-description">
               This is my First Project. I am First Creating a simple web page
               using HTML and CSS. It is my Second Day on this Page. I hop to
@@ -77,7 +85,9 @@
 
         <div class="projects-container">
           <div class="project-details">
+            <!-- h1 tag -->
             <h1 id="project-title">Project 2</h1>
+            <!-- Unique id -->
             <p id="project-description">
               In the Next Week I have to add the JavaScript on this Web page to
               make it interactive. I will Start this task on next Monday. I hope
@@ -96,7 +106,9 @@
 
         <div class="projects-container">
           <div class="project-details">
+            <!-- h1 tag -->
             <h1 id="project-title">Project 3</h1>
+            <!-- Unique id -->
             <p id="project-description">
               In the Third Week I have to Connect this Front end Project with
               the Back-End. I will use node.js to do this. I will do this work.
@@ -115,9 +127,10 @@
         </div>
 
         <!--------------------------------------   Contact Section           -------------------------->
-
+        <!-- semantic tag -->
         <div class="contact-section">
           <div class="section">
+            <!-- h1 tag -->
             <h1 id="contact">Contact</h1>
             <div class="section2">
             <h4 id="contact-action">[Put your call to action here]</h4>
@@ -138,6 +151,7 @@
                 <i class="fa-brands fa-linkedin"></i>
                 <i class="fa-brands fa-github"></i>
               </div>
+              <!-- Try to handle spaces with in the styles, please avoid using hr or br -->
               <hr>
               <div class="template">
                 <i class="fa-regular fa-copyright"></i>
@@ -164,3 +178,5 @@
     </div>
   </body>
 </html>
+
+<!-- Must maintain the hierarchy of the content (h1,h2,h3... , p, span,lable) tags -->
