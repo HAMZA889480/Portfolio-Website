@@ -1,3 +1,5 @@
+/* Avoid using px, cm etc (constant units), try to use %, vh, vw */
+
 * {
   margin: 0;
   padding: 0;
