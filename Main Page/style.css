@@ -1,18 +1,94 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');*/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Google Sans Regular";
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
 
+.body{
+  min-height: 100vh;
+}
+
+header{
+  background: #039be5;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4% 4%;
+  transition: 0.4s;
+}
+
+
+
+header.sticky{
+  background-color: #424242;
+  padding: 21px 100px;
+}
+
+header .protfolio{
+  color:white;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+header .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  margin: 0 30px;
+  padding: 0.3vw 2vh;
+  border-radius: 40px;
+  transition: 0.3s;
+  background: none;   /*Reset the backGround when I hover */
+}
+
+header .menu.active{
+  right: 0;
+}
+
+header .menu a:hover{
+  color: #039be5;
+  font-size: 20px;
+  padding: 0.5vw 3vh;
+  background-color: white;
+  background-size: 150% 100%; /* Adjust width and height as needed */
+  background-origin: left; /* Start expanding from the left edge */
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+header .btn{
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
 
 
 .name {
-  min-height: 500px;
-  margin-left: 35px;
-  margin-top: 150px;
+  min-height: 80vh;
+  margin-left: 15vw;
+  margin-top: 35vh;
   box-sizing: border-box;
   font-size: 20px;
 }
@@ -21,14 +97,19 @@
   color: #039be5;
 }
 
+.designation{
+  display: block;
+  padding-top: 0.4vh;
+}
+
 .button {
-  padding: 8px 16px;
+  padding: 0.5vh 1.5vw;
   border: 2px solid #039be5;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2vw 0.2vh;
   color: black;
   background-color: white;
   cursor: pointer;
@@ -40,7 +121,7 @@
 }
 
 .about-section {
-  min-height: 550px;
+  min-height: 100vh;
   color: white;
   background-image: linear-gradient(
     to right,
@@ -54,7 +135,8 @@
 }
 .about {
   text-align: center;
-  padding-top: 65px;
+  padding-top: 13vh;
+  font-size: 30px;
 }
 
 .container {
@@ -64,33 +146,54 @@
 .container img {
   width: 250px;
   height: 250px;
-  margin-left: 150px;
-  margin-top: 80px;
+  margin-left: 10vw;
+  margin-top: 10vh;
 }
 .intro-container {
-  font-size: 35px;
-  padding-top: 80px;
-  margin-left: 150px;
-  padding-bottom: 95px;
+  font-size: 30px;
+  text-align: justify;
+  padding-top: 10vh;
+  margin-left: 15vw;
+  margin-right: 5vw;
+  padding-bottom: 20vh;
+}
+.line2{
+  border-top: 1vh solid #039be5;
+  margin: 10vh auto;
+  width: 50%;
+}
+
+.projects{
+  color: #039be5;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .project-section{
-  min-height: 550px;
-  padding-top: 80px;
+  min-height: 120vh;
+  padding-top: 15vh;
 }
 
 .projects-container img{
   width: 450px;
   
   height: 250px;
-  margin-left: 150px;
-  margin-top: 80px;
-  margin-right: 50px;
+  margin-left: 15vw;
+  margin-top: 10vh;
+  margin-right: 5vw;
 }
 
 .projects{
   text-align: center;
 }
+
+.project-title{
+  text-transform: uppercase;
+}
+
+
 
 .projects-container{
   display: flex;
@@ -98,26 +201,28 @@
 
 .project-details{
 
-  padding-top: 60px;
-  margin-left: 150px;
-  padding-bottom: 95px;
+  padding-top: 10vh;
+  margin-left: 10vw;
+  padding-bottom: 13vh;
 }
 
-.project-details #project-title{
+.project-details .project-title{
   font-size: 30px;
   font-weight: bold;
   text-align: left;
   text-decoration: none;
 }
 
-.project-details #project-description{
+.project-details .project-description{
   font-size: 15px;
-  font-weight: lighter;
-  padding-top: 30px;
+  font-weight: light;
+  font-size: 15px;
+  padding-top: 8vh;
 }
 
 .buttons{
-  padding-top: 40px;
+  position: static;
+  padding-top: 6vh;
 }
 
 
@@ -213,7 +318,7 @@
   
   margin-right: 50px;
 }
-hr{
+.line{
   border-top: 1px solid white;
   margin: 40px auto;
   width: 50%; 
@@ -327,3 +432,37 @@ hr{
 
 }
 
+@media only screen and (max-width: 900px) {
+
+header .btn{
+  display:block;
+}
+header .menu{
+  position: fixed;
+  flex-direction: column;
+  background: #424242;
+  top: 0;
+  min-width: 45vw;
+  height: 100%;
+  right: 0;
+  align-items: center;
+}
+
+header .menu .close-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2vw;
+}
+
+header .menu a{
+  display: block;
+  margin: 0 auto;
+  padding: 5vh 0;
+  font-size: 20px;
+  transition: 0.3s;
+}
+header .menu a:hover{
+  padding: 3vh 20vh;
+}
+}

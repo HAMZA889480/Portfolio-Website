@@ -11,55 +11,68 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!----------------------         Nav Bar       --------------------------->
 
-  <!----------------------         Nav Bar       --------------------------->
-  
-    
+    <header>
+      <a href="#" class="protfolio">Portfolio</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="main-container">
-      <div class="name">
-        <h1>Hi, My name is<span class="colored-name"> Ameer Hamza</span></h1>
-        <h1>I am a Web developer.</h1>
-        <button class="button">Know More</button>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
       </div>
-      <div class="about-section">
-        <h1 class="about">About Me</h1>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
 
-        <div class="container">
-          <div class="image">
-            <img src="Images/Pic.jpg" alt="My Pic" />
-          </div>
-          <div class="intro-container">
-            <p class="intro">
-              My Name is Ameer Hamza. I am Learning HTML and CSS. This is my
-              First day at FocusTeck. Time is coming near to go home. I want to
-              go to home.
-            </p>
-            <button class="button">Know More</button>
+    <!-------Mian Section ---------------------->
+
+    <main class="main-container">
+      <section>
+        <div class="name">
+          <h1>
+            Hi, My name is<span class="colored-name"> Ameer Hamza</span>
+            <span class="designation">I am a Software Engineer</span>
+          </h1>
+
+          <button class="button">Know More</button>
+        </div>
+        <div class="about-section">
+          <h1 class="about">About Me</h1>
+          <div class="line"></div>
+
+          <div class="container">
+            <div class="image">
+              <img src="Images/Pic.jpg" alt="My Pic" />
+            </div>
+            <div class="intro-container">
+              <p class="intro">
+                My Name is Ameer Hamza. I am Learning HTML and CSS. This is my
+                First day at FocusTeck. Time is coming near to go home. I want
+                to go to home.
+              </p>
+              <button class="button">Know More</button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-------------------------      Projects Section               ------------------------------------>
-      <div class="project-section">
+      <article class="project-section">
         <h1 class="projects">Projects</h1>
-
+          <div class="line2"></div>
         <div class="projects-container">
+          
           <div class="project-details">
-            <h1 id="project-title">Project 1</h1>
-            <p id="project-description">
+            
+            <h2 class="project-title">Project 1</h2>
+            
+            <p class="project-description">
               This is my First Project. I am First Creating a simple web page
               using HTML and CSS. It is my Second Day on this Page. I hop to
               complete this soon.
@@ -77,8 +90,8 @@
 
         <div class="projects-container">
           <div class="project-details">
-            <h1 id="project-title">Project 2</h1>
-            <p id="project-description">
+            <h2 class="project-title">Project 2</h2>
+            <p class="project-description">
               In the Next Week I have to add the JavaScript on this Web page to
               make it interactive. I will Start this task on next Monday. I hope
               to complete this task on Given Time.
@@ -96,8 +109,8 @@
 
         <div class="projects-container">
           <div class="project-details">
-            <h1 id="project-title">Project 3</h1>
-            <p id="project-description">
+            <h2 class="project-title">Project 3</h2>
+            <p class="project-description">
               In the Third Week I have to Connect this Front end Project with
               the Back-End. I will use node.js to do this. I will do this work.
               First I have to evaluate above 2 tasks than I will proceed to the
@@ -113,54 +126,70 @@
             <img src="Images/project 3.jpg" alt="My Pic" />
           </div>
         </div>
+      </article>
+      <!--------------------------------------   Contact Section           -------------------------->
 
-        <!--------------------------------------   Contact Section           -------------------------->
-
-        <div class="contact-section">
-          <div class="section">
-            <h1 id="contact">Contact</h1>
-            <div class="section2">
+      <section class="contact-section">
+        <div class="section">
+          <h1 id="contact">Contact</h1>
+          <div class="section2">
             <h4 id="contact-action">[Put your call to action here]</h4>
             <div class="contact-button">
               <button class="button3">Call to Action</button>
             </div>
           </div>
-          </div>
+        </div>
+      </section>
+
+      <!----------- Footer Section       ------------------------------------>
+      <footer class="footer">
+        <i id="icon" class="fa-solid fa-chevron-up"></i>
+        <div class="socialIcons">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
         </div>
 
+        <div class="line"></div>
 
-        <!----------- Footer Section       ------------------------------------>
-          <footer class="footer">
-            
-              <i id="icon" class="fa-solid fa-chevron-up"></i>
-              <div class="socialIcons">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-              </div>
-              <hr>
-              <div class="template">
-                <i class="fa-regular fa-copyright"></i>
-                <h4>2021</h4>
-                <p> This template is designed by Ameer Hamza</p>
-              </div>
-              <div class="template-buttons">
-                <button class="fork">
-                  <i class="fa-solid fa-code-fork"></i>
-                  <div class="line"></div>
+        <div class="template">
+          <i class="fa-regular fa-copyright"></i>
+          <h4>2021</h4>
+          <p>This template is designed by Ameer Hamza</p>
+        </div>
+        <div class="template-buttons">
+          <button class="fork">
+            <i class="fa-solid fa-code-fork"></i>
+            <div class="line"></div>
 
-                  <h5> 20,2514</h5>
-                </button>
+            <h5>20,2514</h5>
+          </button>
 
-                <button class="fork">
-                  <i class="fa-regular fa-star"></i>
-                  
-                  <h5> 35,2514</h5>
-                </button>
-              </div>
-          </footer>
-        
-      </div>
-    </div>
+          <button class="fork">
+            <i class="fa-regular fa-star"></i>
+
+            <h5>35,2514</h5>
+          </button>
+        </div>
+      </footer>
+    </main>
+
+    <script type="text/JavaScript">
+            window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY>0);
+      });
+      var menu=document.querySelector('.menu');
+      var menuBtn=document.querySelector('.menu-btn');
+      var closeBtn=document.querySelector('.close-btn');
+
+      menuBtn.addEventListner("click",()=>{
+        menu.classList.add('active');
+      });
+
+      closeBtn.addEventListner("click",()=>{
+        menu.classList.remove('active');
+      });
+    </script>
   </body>
 </html>
