@@ -3,16 +3,88 @@
   margin: 0;
   padding: 0;
   /*font-family: 'Poppins', sans-serif;*/
+  
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box;
 }
 
 .body{
   min-height: 100vh;
 }
 
+header{
+  background: #039be5;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4% 4%;
+  transition: 0.4s;
+}
 
+
+
+header.sticky{
+  background-color: #424242;
+  padding: 21px 100px;
+}
+
+header .protfolio{
+  color:white;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+header .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  margin: 0 30px;
+  padding: 0.3vw 2vh;
+  border-radius: 40px;
+  transition: 0.3s;
+  background: none;   /*Reset the backGround when I hover */
+}
+
+header .menu.active{
+  right: 0;
+}
+
+header .menu a:hover{
+  color: #039be5;
+  font-size: 20px;
+  padding: 0.5vw 3vh;
+  background-color: white;
+  background-size: 150% 100%; /* Adjust width and height as needed */
+  background-origin: left; /* Start expanding from the left edge */
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+header .btn{
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
 
 .name {
   min-height: 80vh;
@@ -396,39 +468,45 @@
 
 
 /*Nav Bar CSS*/
-/*
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px){
 
-header .btn{
-  display:block;
-}
-header .menu{
-  position: fixed;
-  flex-direction: column;
-  background: #424242;
-  top: 0;
-  min-width: 45vw;
-  height: 100%;
-  right: 0;
-  align-items: center;
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    flex-direction: column;
+    background: #424242;
+    top: 0;
+    min-width: 45vw;
+    height: 100%;
+    
+    right: -100%;
+    align-items: center;
+  }
+
+
+  header .menu.active{
+    right: 0; 
+  }
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2vw;
+  }
+
+  header .menu a{
+    display: block;
+    margin: 0 auto;
+    padding: 5vh 0;
+    font-size: 20px;
+    transition: 0.3s;
+    
+  }
+  header .menu a:hover{
+    padding: 3vh 20vh;
+  }
 }
 
-header .menu .close-btn{
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 2vw;
-}
-
-header .menu a{
-  display: block;
-  margin: 0 auto;
-  padding: 5vh 0;
-  font-size: 20px;
-  transition: 0.3s;
-}
-header .menu a:hover{
-  padding: 3vh 20vh;
-}
-}
-*/
