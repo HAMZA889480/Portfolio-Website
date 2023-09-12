@@ -8,192 +8,356 @@
       src="https://kit.fontawesome.com/f064934a3a.js"
       crossorigin="anonymous"
     ></script>
+    
     <title>Portfolio</title>
   </head>
   <body>
     <!----------------------         Nav Bar       --------------------------->
 
-    <header>
-      <a href="#" class="protfolio">Brand</a>
-      <div class="menu">
+    <div class="container" id="blur">
+      <header>
+        <a href="#" class="protfolio">Brand</a>
+        <div class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <a href="../Main Page/index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#projects">Projects</a>
+          <a href="../UserPage/SignIn.html">Sign In</a>
+          <a href="../UserPage/SignUp.html">SignUp</a>
+        </div>
         <div class="btn">
-          <i class="fas fa-times close-btn"></i>
+          <i class="fas fa-bars menu-btn"></i>
         </div>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Footer</a>
-      </div>
-      <div class="btn">
-        <i class="fas fa-bars menu-btn"></i>
-      </div>
-    </header>
-    
-    
+      </header>
 
-    <!-------Mian Section ---------------------->
+      <!-------Mian Section ---------------------->
 
-    <main class="main-container">
-      <section>
-        <div class="name">
-          <h1>
-            Hi, My name is<span class="colored-name"> Ameer Hamza</span>
-            <span class="designation">I am a Software Engineer</span>
-          </h1>
+      <main class="main-container">
+        <section>
+          <div class="name">
+            <h1>
+              Hi, My name is<span class="colored-name"> Ameer Hamza</span>
+              <span class="designation">I am a Software Engineer</span>
+            </h1>
 
-          <button class="button">Know More</button>
-        </div>
-        <div class="about-section">
-          <h1 class="about">About Me</h1>
+            <button class="button">Know More</button>
+          </div>
+          <div class="about-section" id="about">
+            <h1 class="about">About Me</h1>
+            <div class="line"></div>
+
+            <div class="container">
+              <div class="image">
+                <img src="Assests/Public/Images/Pic.jpg" alt="My Pic" />
+              </div>
+              <div class="intro-container">
+                <p class="intro">
+                  My Name is Ameer Hamza. I am Learning HTML and CSS. This is my
+                  First day at FocusTeck. Time is coming near to go home. I want
+                  to go to home.
+                </p>
+                <button class="button">Know More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-------------------------      Projects Section               ------------------------------------>
+        <article class="project-section">
+          <h1 class="projects">Projects</h1>
+          <div class="line2"></div>
+
+          <div class="project-Search">
+            <input
+              type="text"
+              placeholder="Search Project using Title"
+              id="proj-search-bar"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div id="proj-parent">
+            <!-------Grand Parent--------->
+            <!-------------- This is the parent div   ------------------->
+
+            <div class="projects-container" id="parent">
+              <!---Parent--->
+              <!--------Place all the childs inside this ----------->
+              <div class="project-details">
+                <!----Child 1-->
+
+                <div class="title-edit">
+                  <h2 class="project-title">Project 100</h2>
+                  <div class="title-icons">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+
+                <p class="project-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  voluptatem harum consectetur est beatae dicta optio illo
+                  maiores omnis. Magnam autem corporis voluptatem quidem quos,
+                  facere impedit delectus cum magni. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Explicabo quasi temporibus
+                  possimus suscipit a, accusamus necessitatibus nulla
+                  perspiciatis error ea sit. Ducimus voluptas quae tenetur
+                  deserunt beatae natus hic illum?
+                </p>
+                <div class="buttons">
+                  <!----------Child child      created    ------------------------->
+                  <button class="button">See Live</button>
+                  <button class="button2" onclick="toogle()">Read More</button>
+                </div>
+              </div>
+
+              <div class="project-image" id="child-two">
+                <!----------Child two created     ---------------->
+                <img src="Assests/Public/Images/project 1.jpg" alt="My Pic" />
+              </div>
+            </div>
+
+            <div class="projects-container" id="parent">
+              <!---Parent--->
+              <!--------Place all the childs inside this ----------->
+              <div class="project-details">
+                <!----Child 1-->
+
+                <div class="title-edit">
+                  <h2 class="project-title">Project 1</h2>
+                  <div class="title-icons">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+
+                <p class="project-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  voluptatem harum consectetur est beatae dicta optio illo
+                  maiores omnis. Magnam autem corporis voluptatem quidem quos,
+                  facere impedit delectus cum magni. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Explicabo quasi temporibus
+                  possimus suscipit a, accusamus necessitatibus nulla
+                  perspiciatis error ea sit. Ducimus voluptas quae tenetur
+                  deserunt beatae natus hic illum?
+                </p>
+                <div class="buttons">
+                  <!----------Child child      created    ------------------------->
+                  <button class="button">See Live</button>
+                  <button class="button2" onclick="toogle()">Read More</button>
+                </div>
+              </div>
+
+              <div class="project-image" id="child-two">
+                <!----------Child two created     ---------------->
+                <img src="Assests/Public/Images/project 1.jpg" alt="My Pic" />
+              </div>
+            </div>
+          </div>
+
+          <button class="add-Project-btn" id="add-project" type="button">Add Project</button>
+        </article>
+        <!-------------------Experrinece Section ---------------------->
+        <section class="experience-section" id="exp-section">
+          
+
+          <div class="experience-heading">
+            <h2>Your Experience</h2>
+             
+            <div class="exp-line"></div>
+
+            <div class="project-Search" style="margin-top: 0.2vh">
+              <input
+                type="text"
+                placeholder="Search Experience By Role"
+                id="exp-search-bar"
+                style="width: 50%"
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+
+          <div class="card-container" id="card-cont">
+            <div class="card">
+              <div class="soft-name">
+                <div class="exp-icon">
+                <p>Software House</p>
+                <i class="fa-solid fa-pen-to-square"></i>
+              </div>
+                <div class="software-line"></div>
+              </div>
+              <div class="soft-role">
+                <p>Associate Software Engineer</p>
+              </div>
+              <div class="softjourney">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  similique laborum corporis, tenetur eius quas neque
+                  consectetur autem hic maxime, officiis rem ratione doloribus
+                  ex a aspernatur eaque reprehenderit nobis.
+                </p>
+              </div>
+              <div class="length">
+                <div class="dur">
+                  <p>Duration</p>
+                  <p class="work-duration">1 year</p>
+                  <i class="fa-solid fa-trash"></i>
+
+                </div>
+              </div>
+            </div>
+
+            
+
+            
+          </div>
+        </section>
+
+
+        <!-----------------   Edu cation Section      ----------             ------------------------------>
+        <section class="education-section" >
+          <div class="education-heading">
+            <h2>Your Education</h2>
+            <div class="exp-line"></div>
+
+
+            <div class="card-container" style="position: relative; display: flex; flex-direction: column; align-items: center;"
+             id="edu-card">
+              <div class="card" style="width: 50%; ">
+                <div class="soft-name">
+                  <div class="edit-edu">
+                    <h2 style="margin-left: 2vw; text-align: left; color: white; font-size: 2rem;">2018</h2>
+                  
+                    <div class="edu-icons">
+                    <i class="fa-solid fa-pen-to-square" ></i>
+                    <i class="fa-solid fa-trash"></i>
+                  </div>
+                </div>
+                  <p>Intermediate</p>
+                  <div class="software-line"></div>
+                </div>
+                <div class="soft-role">
+                  <p>Associate Software Engineer</p>
+                </div>
+                <div class="softjourney">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                    similique laborum corporis, tenetur eius quas neque
+                    consectetur autem hic maxime, officiis rem ratione doloribus
+                    ex a aspernatur eaque reprehenderit nobis.
+                  </p>
+                </div>
+                <div class="length">
+                  <div class="dur" style="padding-top: 10vh;">
+                    <p>Majors</p>
+                    <p class="work-duration">Science</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              
+
+
+              
+
+
+
+
+
+
+  
+              
+  
+              
+            </div>
+            
+          </div>
+
+          
+        </section>
+
+        <!--------------------------------------   Contact Section           -------------------------->
+
+        <section class="contact-section" id="contact">
+          <div class="section">
+            <h1 id="contact">Contact</h1>
+            <div class="section2">
+              <h4 id="contact-action">Have a query? Send us Email</h4>
+              <div class="contact-button">
+                <button class="button3" type="button" id="email-link">
+                  Send Email
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!----------- Footer Section       ------------------------------------>
+        <footer class="footer">
+          <i id="icon" class="fa-solid fa-chevron-up"></i>
+          <div class="socialIcons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin" id="linkedIn-page"></i>
+            <i class="fa-brands fa-github" id="gitHub-page"></i>
+          </div>
+
           <div class="line"></div>
 
-          <div class="container">
-            <div class="image">
-              <img src="Assests/Public/Images/Pic.jpg" alt="My Pic" />
-            </div>
-            <div class="intro-container">
-              <p class="intro">
-                My Name is Ameer Hamza. I am Learning HTML and CSS. This is my
-                First day at FocusTeck. Time is coming near to go home. I want
-                to go to home.
-              </p>
-              <button class="button">Know More</button>
-            </div>
+          <div class="template">
+            <i class="fa-regular fa-copyright"></i>
+            <h4>2021</h4>
+            <p>This template is designed by Ameer Hamza</p>
           </div>
-        </div>
-      </section>
+          <div class="template-buttons">
+            <button class="fork">
+              <i class="fa-solid fa-code-fork"></i>
 
-      <!-------------------------      Projects Section               ------------------------------------>
-      <article class="project-section">
-        <h1 class="projects">Projects</h1>
-        <div class="line2"></div>
-        <div class="projects-container">
-          <div class="project-details">
-            <h2 class="project-title">Project 1</h2>
+              <h5>20,2514</h5>
+            </button>
 
-            <p class="project-description">
-              This is my First Project. I am First Creating a simple web page
-              using HTML and CSS. It is my Second Day on this Page. I hop to
-              complete this soon.
-            </p>
-            <div class="buttons">
-              <button class="button">See Live</button>
-              <button class="button2">Source Code</button>
-            </div>
+            <button class="fork">
+              <i class="fa-regular fa-star"></i>
+
+              <h5>35,2514</h5>
+            </button>
           </div>
+        </footer>
+      </main>
+    </div>
 
-          <div class="project-image">
-            <img src="Assests/Public/Images/project 1.jpg" alt="My Pic" />
-          </div>
+    <div id="popup">
+      <h2 id="popup-title">Title</h2>
+      <div class="errorLine"></div>
+      <div class="popUpContainer">
+        <img id="popup-img"
+          src="../Main Page/Assests/Public/Images/project 1.jpg"
+          alt="project1"
+        />
+
+        <figcaption id="popUp-des">
+          Lorem ipsum dolor sit amet 
+        </figcaption>
+        <div class="tags">
+          <button class="tag-btn" id="tag1">Tag1</button>
+          <button class="tag-btn space" id="tag2">Tag1</button>
+          <button class="tag-btn space" id="tag3">Tag1</button>
         </div>
-
-        <div class="projects-container">
-          <div class="project-details">
-            <h2 class="project-title">Project 2</h2>
-            <p class="project-description">
-              In the Next Week I have to add the JavaScript on this Web page to
-              make it interactive. I will Start this task on next Monday. I hope
-              to complete this task on Given Time.
-            </p>
-            <div class="buttons">
-              <button class="button">See Live</button>
-              <button class="button2">Source Code</button>
-            </div>
-          </div>
-
-          <div class="project-image">
-            <img src="Assests/Public/Images/project 2.jpg" alt="My Pic" />
-          </div>
-        </div>
-
-        <div class="projects-container">
-          <div class="project-details">
-            <h2 class="project-title">Project 3</h2>
-            <p class="project-description">
-              In the Third Week I have to Connect this Front end Project with
-              the Back-End. I will use node.js to do this. I will do this work.
-              First I have to evaluate above 2 tasks than I will proceed to the
-              next stage.
-            </p>
-            <div class="buttons">
-              <button class="button">See Live</button>
-              <button class="button2">Source Code</button>
-            </div>
-          </div>
-
-          <div class="project-image">
-            <img src="Assests/Public/Images/project 3.jpg" alt="My Pic" />
-          </div>
-        </div>
-      </article>
-      <!--------------------------------------   Contact Section           -------------------------->
-
-      <section class="contact-section">
-        <div class="section">
-          <h1 id="contact">Contact</h1>
-          <div class="section2">
-            <h4 id="contact-action">[Put your call to action here]</h4>
-            <div class="contact-button">
-              <button class="button3">Call to Action</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!----------- Footer Section       ------------------------------------>
-      <footer class="footer">
-        <i id="icon" class="fa-solid fa-chevron-up"></i>
-        <div class="socialIcons">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-github"></i>
-        </div>
-
-        <div class="line"></div>
-
-        <div class="template">
-          <i class="fa-regular fa-copyright"></i>
-          <h4>2021</h4>
-          <p>This template is designed by Ameer Hamza</p>
-        </div>
-        <div class="template-buttons">
-          <button class="fork">
-            <i class="fa-solid fa-code-fork"></i>
-
-            <h5>20,2514</h5>
-          </button>
-
-          <button class="fork">
-            <i class="fa-regular fa-star"></i>
-
-            <h5>35,2514</h5>
-          </button>
-        </div>
-      </footer>
-    </main>
-    <script type="text/javascript">
-      window.addEventListener("scroll", function(){
-        var header=document.querySelector("header");
-        header.classList.toggle('sticky' ,window.scrollY>0)
-      });
-
-
-
-      var menu=document.querySelector('.menu');
-      var menuBtn=document.querySelector('.menu-btn');
-      var closeBtn=document.querySelector('.close-btn');
-
-      menuBtn.addEventListener("click", ()=>{
-        menu.classList.add('active');
-
-      });
-
-      closeBtn.addEventListener("click", ()=>{
-        menu.classList.remove('active');
-
-      });
-
-    </script>
-   
+      </div>
+      <div class="close-btn">
+        <button class="close-btn-cls" onclick="toogle()">Close</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="projectsData.js"></script>
+    <script type="text/javascript" src="../projectPage/projects.js"></script>
+    <script type="text/javascript" src="experienceData.js"></script>
+    <script type="text/javascript" src="../UserData/userData.js"></script>
+    <script type="text/javascript" src="educationData.js"></script>
+    
+    
   </body>
 </html>
